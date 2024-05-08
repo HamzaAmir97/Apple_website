@@ -1,4 +1,8 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Highlights from './components/Highlights'
+
 
 export const App = () => {
   return (
@@ -6,8 +10,8 @@ export const App = () => {
       <Navbar />
       <Hero />
       <Highlights />
-      <HowItWorks />
-      <VideoCarousel />
+   
+   
     </main>
   )
 }
