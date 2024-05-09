@@ -1,7 +1,7 @@
+
 import {
     blackImg,
     blueImg,
-    highlightFirstVideo,
     highlightFourthVideo,
     highlightSecondVideo,
     highlightThirdVideo,
