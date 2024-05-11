@@ -1,4 +1,3 @@
-
 import {
     blackImg,
     blueImg,
@@ -7,7 +6,7 @@ import {
     highlightThirdVideo,
     whiteImg,
     yellowImg,
-  } from "../../utils";
+  } from "../utils";
   
   export const navLists = ["Store", "Mac", "iPhone", "Support"];
   

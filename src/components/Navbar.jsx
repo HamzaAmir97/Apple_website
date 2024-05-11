@@ -1,5 +1,5 @@
 import React from 'react'
-import{appleImg,searchImg,bagtImg} from '../utils';
+import { appleImg, searchImg, bagImg } from '../utils';
 
 import { navLists  } from '../constants';
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
 <div>
   <img src={searchImg} alt='search' width={18} height={30} className='w-10 h-10' />
-  <img src={bagtImg} alt='bag' width={18} height={30} className='w-10 h-10' />
+  <img src={bagImg} alt='bag' width={18} height={30} className='w-10 h-10' />
 
 
 </div>
