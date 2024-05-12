@@ -1,6 +1,5 @@
 import React from 'react'
 import { appleImg, searchImg, bagImg } from '../utils';
-
 import { navLists  } from '../constants';
 
 const Navbar = () => {
