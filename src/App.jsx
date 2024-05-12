@@ -1,11 +1,11 @@
-import React from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Highlights from './components/Highlights';
 
 export const App = () => {
   return (
-    < div className='bg-black'>
+    <main className='bg-black'>
  
 
       <Navbar />
@@ -13,7 +13,7 @@ export const App = () => {
       <Highlights />
    
    
-    </div>
+    </main>
   )
 }
 
