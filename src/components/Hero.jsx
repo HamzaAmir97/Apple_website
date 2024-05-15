@@ -11,11 +11,11 @@ export const Hero = () => {
 
   return (
     <section
-      id="hero"  // ✅ أضف الـ id هنا ليتعرف عليه gsap
-      className="w-full h-screen nav-height bg-black relative opacity-0" // تبدأ بـ opacity 0
+      // ✅ أضف الـ id هنا ليتعرف عليه gsap
+      className="w-full h-screen nav-height bg-black relative " // تبدأ بـ opacity 0
     >
       <div className="h-5/6 w-full flex-center flex-col">
-        <p className="hero-title text-2xl font-bold text-white">
+        <p   id="hero" className="hero-title text-2xl font-bold text-white opacity 0 ">
           iPhone 15 Pro
         </p>
       </div>
