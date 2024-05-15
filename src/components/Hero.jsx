@@ -1,35 +1,26 @@
-import React from 'react'
-import  {gsap} from 'gsap'
-import { useGSAP } from '@gsap/react'
-
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export const Hero = () => {
-  
- useGSAP(()=>{
+  useGSAP(() => {
+    gsap.to('#hero', {
+      opacity: 1,
+      delay: 1.5,
+    });
+  }, []); // هذه هي المصفوفة التي تشير إلى تنفيذ الـ effect مرة واحدة
 
-  gsap.To('#hero',{
-    opacity:1,
-    y:100,}
-    
-    
-    ,[])
-  })
-  
   return (
-
-
-    <section className='w-full h-screen nav-height bg-black
-      relative'>
-    <div className='h-5/6 w-full flex-center flex-col '>
-    
-    
-   <p className='hero-title text-2xl font-bold'>
-    iphone 15 pro
-   </p>
-   
-    </div>   
+    <section
+      id="hero"  // ✅ أضف الـ id هنا ليتعرف عليه gsap
+      className="w-full h-screen nav-height bg-black relative opacity-0" // تبدأ بـ opacity 0
+    >
+      <div className="h-5/6 w-full flex-center flex-col">
+        <p className="hero-title text-2xl font-bold text-white">
+          iPhone 15 Pro
+        </p>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Hero;
