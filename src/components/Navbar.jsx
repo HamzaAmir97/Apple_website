@@ -10,7 +10,7 @@ const Navbar = () => {
         
         <div className='flex flex-1 justify-center  max-sm:hidden'>
           {["iphone", "ipad", "mac", "watch", "tv", "music"].map((item)=>(
-            <div className=' px-5 text-sm cursor-pointer text-gray hover:text-white transition-all  ' key={item.id} >
+            <div className=' px-5 text-sm cursor-pointer text-gray hover:text-white transition-all' key={item.id} >
              {item}</div>
           ))}
 
@@ -18,10 +18,10 @@ const Navbar = () => {
         </div>
         
 
-<div className='flex items-baseline gap-7
-   max-sm:justify-end max-sm:flex-1'>
-  <img src={searchImg} alt='search' width={15} height={15 } className='w-10  h-10' />
-  <img src={bagImg} alt='bag' width={15} height={15} className='w-10 h-10' />
+<div className=' flex items-baseline
+   max-sm:justify-end max-sm:flex-1 gap-10'>
+  <img src={searchImg} alt='search' width={10} height={10 } className='w-10  h-10 mx-2' />
+  <img src={bagImg} alt='bag' width={10} height={10} className='w-10 h-10 mx-2' />
 
 
 </div>
