@@ -4,10 +4,10 @@ import { heroVideo, smallHeroVideo } from '../utils';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
-  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 760 ? smallHeroVideo : heroVideo)
+  const [videoSrc, setVideoSrc] = useState(window.innerWidth < 720 ? smallHeroVideo : heroVideo)
 
   const handleVideoSrcSet = () => {
-    if(window.innerWidth < 760) {
+    if(window.innerWidth < 720) {
       setVideoSrc(smallHeroVideo)
     } else {
       setVideoSrc(heroVideo)
@@ -23,8 +23,8 @@ const Hero = () => {
   }, [])
 
   useGSAP(() => {
-    gsap.to('#hero', { opacity: 1, delay: 2 })
-    gsap.to('#cta', { opacity: 1, y: -50, delay: 2 })
+    gsap.to('#hero', { opacity: 1, delay: 2,  })
+    gsap.to('#cta', { opacity: 1, y: -50, delay: 2,  })
   }, [])
 
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
         id="cta"
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
-        <a href="#highlights" className="btn">Buy</a>
+        <button href="#highlights" className="tex-sky-400 btn">Buy</button>
         <p className="font-normal text-xl">From $199/month or $999</p>
       </div>
     </section>
