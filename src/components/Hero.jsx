@@ -42,7 +42,9 @@ const Hero = () => {
         id="cta"
         className="flex flex-col items-center opacity-0 translate-y-20"
       >
-        <button href="#highlights" className="tex-sky-400 btn">Buy</button>
+        <button class=" z-20 bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">
+  Save Changes
+</button>
         <p className="font-normal text-xl">From $199/month or $999</p>
       </div>
     </section>
